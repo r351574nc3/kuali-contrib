@@ -31,10 +31,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredProperties>
         <requiredProperty key="contribPrototypeGroupId">
-            <defaultValue>org.kualigan.kc.contrib</defaultValue>
+            <defaultValue>org.kualigan.kuali.contrib</defaultValue>
         </requiredProperty>
         <requiredProperty key="contribPrototypeArtifactId">
-            <defaultValue>kc-contrib-parent</defaultValue>
+            <defaultValue>kfs-contrib-parent</defaultValue>
         </requiredProperty>
         <requiredProperty key="contribPrototypeVersion">
             <defaultValue>6.0</defaultValue>
