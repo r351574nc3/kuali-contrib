@@ -31,7 +31,7 @@
   <parent>
     <groupId>org.kualigan.kuali.contrib</groupId>
     <artifactId>kuali-contrib</artifactId>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
   </parent>
 
   <groupId>org.kualigan.kuali.contrib</groupId>
