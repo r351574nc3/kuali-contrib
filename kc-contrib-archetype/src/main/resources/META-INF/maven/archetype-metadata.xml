@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2014 Leo Przybylski. All rights reserved.
+  
+   Redistribution and use in source and binary forms, with or without modification, are
+   permitted provided that the following conditions are met:
+  
+      1. Redistributions of source code must retain the above copyright notice, this list of
+         conditions and the following disclaimer.
+  
+      2. Redistributions in binary form must reproduce the above copyright notice, this list
+         of conditions and the following disclaimer in the documentation and/or other materials
+         provided with the distribution.
+  
+   THIS SOFTWARE IS PROVIDED BY Leo Przybylski ''AS IS'' AND ANY EXPRESS OR IMPLIED
+   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+   FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> OR
+   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+   SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+   ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+   The views and conclusions contained in the software and documentation are those of the
+   authors and should not be interpreted as representing official policies, either expressed
+   or implied, of Leo Przybylski.
+-->
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="kc"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requiredProperties>
+        <requiredProperty key="contribPrototypeGroupId">
+            <defaultValue>org.kualigan.kc.contrib</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="contribPrototypeArtifactId">
+            <defaultValue>kc-contrib-parent</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="contribPrototypeVersion">
+            <defaultValue>6.0</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+  <modules>
+    <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.ks</include>
+            <include>**/*.ldif</include>
+          </includes>
+        </fileSet>
+    </fileSets>
+  </modules>
+</archetype-descriptor>
